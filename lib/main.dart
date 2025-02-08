@@ -66,7 +66,7 @@ class _MyAppState extends State<MyApp> {
                     "Calculator",
                     style: TextStyle(
                       color: Color.fromARGB(255, 15, 174, 188),
-                      fontSize: 40.0,
+                      fontSize: 50.0,
                     ),
                   ),
                   SizedBox(
