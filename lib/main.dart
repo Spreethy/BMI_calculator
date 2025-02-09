@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(MaterialApp(
-    theme: ThemeData(primaryColor: Colors.blue),
+    theme: ThemeData(primaryColor: Color.fromARGB(255, 27, 3, 99)),
     home: const MyApp(),
     debugShowCheckedModeBanner: false,
   ));
@@ -49,22 +47,25 @@ class _MyAppState extends State<MyApp> {
             Container(
               height: size.height * 0.40,
               width: double.infinity,
-              decoration: const BoxDecoration(color: Colors.red),
+              decoration:
+                  const BoxDecoration(color: Color.fromARGB(255, 27, 3, 99)),
               padding:
                   const EdgeInsets.symmetric(vertical: 30.0, horizontal: 10.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text("BMI",
-                      style: TextStyle(
-                        color: Colors.blue,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 60.0,
-                      )),
+                  const Text(
+                    "BMI",
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 15, 174, 188),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 60.0,
+                    ),
+                  ),
                   const Text(
                     "Calculator",
                     style: TextStyle(
-                      color: Colors.blue,
+                      color: Color.fromARGB(255, 15, 174, 188),
                       fontSize: 40.0,
                     ),
                   ),
@@ -73,7 +74,7 @@ class _MyAppState extends State<MyApp> {
                     child: Text(
                       _bmi > 0 ? _bmi.toStringAsFixed(1) : '0.0',
                       style: const TextStyle(
-                        color: Colors.pink,
+                        color: Color.fromARGB(255, 232, 66, 171),
                         fontWeight: FontWeight.bold,
                         fontSize: 45.0,
                       ),
@@ -83,8 +84,9 @@ class _MyAppState extends State<MyApp> {
                   RichText(
                     text: TextSpan(
                       text: "Condition: ",
-                      style:
-                          const TextStyle(color: Colors.pink, fontSize: 25.0),
+                      style: const TextStyle(
+                          color: Color.fromARGB(255, 2, 134, 7),
+                          fontSize: 25.0),
                       children: <TextSpan>[
                         TextSpan(
                           text: _condition,
@@ -101,7 +103,8 @@ class _MyAppState extends State<MyApp> {
               ),
             ),
             Container(
-              decoration: const BoxDecoration(color: Colors.blue),
+              decoration:
+                  const BoxDecoration(color: Color.fromARGB(255, 24, 208, 228)),
               padding:
                   const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
               width: double.infinity,
@@ -111,7 +114,7 @@ class _MyAppState extends State<MyApp> {
                   const Text(
                     "Choose Data",
                     style: TextStyle(
-                      color: Colors.green,
+                      color: Color(0xFF12a644),
                       fontWeight: FontWeight.bold,
                       fontSize: 20.0,
                     ),
